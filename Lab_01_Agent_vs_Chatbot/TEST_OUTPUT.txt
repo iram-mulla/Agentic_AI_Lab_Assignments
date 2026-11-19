@@ -1,0 +1,165 @@
+COMMAND: python.exe Lab_01_Agent_vs_Chatbot\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{
+  "Monday": {
+    "subject": "Data Structures",
+    "time": "17:00-19:00"
+  },
+  "Tuesday": {
+    "subject": "Operating Systems",
+    "time": "17:00-19:00"
+  },
+  "Wednesday": {
+    "subject": "AI Agents",
+    "time": "20:00-22:00"
+  },
+  "Thursday": {
+    "subject": "Data Structures",
+    "time": "17:00-19:00"
+  },
+  "Friday": {
+    "subject": "Operating Systems",
+    "time": "17:00-19:00"
+  },
+  "Saturday": {
+    "subject": "AI Agents",
+    "time": "17:00-19:00"
+  }
+}
+{
+  "Monday": {
+    "subject": "Data Structures",
+    "time": "17:00-19:00"
+  },
+  "Tuesday": {
+    "subject": "Operating Systems",
+    "time": "20:00-22:00"
+  },
+  "Wednesday": {
+    "subject": "AI Agents",
+    "time": "20:00-22:00"
+  },
+  "Thursday": {
+    "subject": "Data Structures",
+    "time": "17:00-19:00"
+  },
+  "Friday": {
+    "subject": "Operating Systems",
+    "time": "17:00-19:00"
+  },
+  "Saturday": {
+    "subject": "AI Agents",
+    "time": "17:00-19:00"
+  }
+}
+
+COMMAND: python.exe Lab_01_Agent_vs_Chatbot\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{
+  "plan": {
+    "Monday": {
+      "subject": "DS",
+      "time": "17:00-19:00"
+    },
+    "Tuesday": {
+      "subject": "OS",
+      "time": "20:00-22:00"
+    },
+    "Wednesday": {
+      "subject": "AI",
+      "time": "20:00-22:00"
+    },
+    "Thursday": {
+      "subject": "DS",
+      "time": "17:00-19:00"
+    },
+    "Friday": {
+      "subject": "OS",
+      "time": "17:00-18:00"
+    }
+  },
+  "log": [
+    {
+      "iteration": 1,
+      "action": "revise_existing_plan",
+      "feedback": "Move Tuesday's session to the evening.",
+      "regenerated": false
+    },
+    {
+      "iteration": 2,
+      "action": "revision_applied",
+      "plan": {
+        "Monday": {
+          "subject": "DS",
+          "time": "17:00-19:00"
+        },
+        "Tuesday": {
+          "subject": "OS",
+          "time": "20:00-22:00"
+        },
+        "Wednesday": {
+          "subject": "AI",
+          "time": "20:00-22:00"
+        },
+        "Thursday": {
+          "subject": "DS",
+          "time": "17:00-19:00"
+        },
+        "Friday": {
+          "subject": "OS",
+          "time": "17:00-19:00"
+        }
+      },
+      "regenerated": false
+    },
+    {
+      "iteration": 3,
+      "action": "revise_existing_plan",
+      "feedback": "Also make Friday's session shorter, only one hour.",
+      "regenerated": false
+    },
+    {
+      "iteration": 4,
+      "action": "revision_applied",
+      "plan": {
+        "Monday": {
+          "subject": "DS",
+          "time": "17:00-19:00"
+        },
+        "Tuesday": {
+          "subject": "OS",
+          "time": "20:00-22:00"
+        },
+        "Wednesday": {
+          "subject": "AI",
+          "time": "20:00-22:00"
+        },
+        "Thursday": {
+          "subject": "DS",
+          "time": "17:00-19:00"
+        },
+        "Friday": {
+          "subject": "OS",
+          "time": "17:00-18:00"
+        }
+      },
+      "regenerated": false
+    }
+  ]
+}
+
+COMMAND: python.exe Lab_01_Agent_vs_Chatbot\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{
+  "status": "CONFLICT",
+  "conflicts": [
+    "Wednesday"
+  ],
+  "message": "Selected unavailable days conflict with busy days: Wednesday"
+}

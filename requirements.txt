@@ -1,0 +1,2 @@
+# Core lab submissions use only the Python standard library.
+reportlab>=4.0

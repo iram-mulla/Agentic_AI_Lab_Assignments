@@ -1,0 +1,22 @@
+COMMAND: python.exe Lab_09_Deep_Research_Agent\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+[S1] RAG reduces hallucination by 41% on domain QA.
+[S2] RAG improves support-ticket QA accuracy by 35%.
+[S3] RAG adds 200-400ms latency per query.
+[S1,S2] S1 and S2 both report accuracy or factuality improvements.
+[S1,S2,S3] S3 identifies latency overhead absent from S1 and S2; this is a gap, not a direct contradiction.
+[gap] No source reports non-English domain QA performance.
+
+COMMAND: python.exe Lab_09_Deep_Research_Agent\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'comparison': {'type': 'direct contradiction', 'sources': ['S1', 'S4'], 'reason': 'different domains, datasets, retrieval setups, and evaluation methodologies'}, 'synthesis': ['[S1] RAG reduces hallucination by 41% Evidence: 200 held-out medical questions. Limitation: small, single-domain evaluation.', '[S4] RAG shows no measurable hallucination improvement Evidence: 500 questions across two enterprise documents. Limitation: different document quality and retrieval setup.', '[conflict] different domains, datasets, retrieval setups, and evaluation methodologies.']}
+
+COMMAND: python.exe Lab_09_Deep_Research_Agent\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'ranked_claims': [{'id': 'S1', 'claim': 'RAG reduces hallucination', 'quality': 'peer-reviewed'}, {'id': 'S2', 'claim': 'RAG is ineffective for this task', 'quality': 'vendor'}], 'quality_tiers': {'peer-reviewed': 3, 'independent benchmark': 2, 'vendor': 1}, 'synthesis': 'Synthesis leans toward S1 because it is peer-reviewed. The lower-tier S2 claim is disclosed and down-weighted, not discarded.', 'trace': ['S1', 'S2']}

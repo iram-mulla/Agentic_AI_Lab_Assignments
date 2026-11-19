@@ -1,0 +1,24 @@
+COMMAND: python.exe Lab_05_MCP_Style_Connector\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+[{'name': 'read_file', 'kind': 'resource', 'input': {'path': 'str'}, 'output': {'content': 'str'}}, {'name': 'query_db', 'kind': 'tool', 'input': {'sql': 'str'}, 'output': {'rows': 'list'}}, {'name': 'call_api', 'kind': 'tool', 'input': {'endpoint': 'str'}, 'output': {'data': 'any'}}]
+{'content': 'Agentic AI Systems - mini MCP server demo.'}
+{'rows': [('AI Club Talk', 12), ('Hackathon Kickoff', 9), ('Robotics Demo', 15)]}
+{'data': ['AI Club Talk', 'Robotics Demo']}
+{'error': 'only SELECT statements are permitted through this tool'}
+{'error': "caller 'unregistered_agent' is not permitted to use query_db"}
+
+COMMAND: python.exe Lab_05_MCP_Style_Connector\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'discovered': [{'name': 'read_file', 'kind': 'resource', 'input': {'path': 'str'}, 'output': {'content': 'str'}}, {'name': 'query_db', 'kind': 'tool', 'input': {'sql': 'str'}, 'output': {'rows': 'list'}}, {'name': 'list_files', 'kind': 'resource', 'input': {}, 'output': {'files': 'list'}}]}
+{'call_result': {'files': ['README.md', 'guide.txt']}}
+
+COMMAND: python.exe Lab_05_MCP_Style_Connector\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'content': 'safe content'}
+{'error': 'path outside safe directory'}

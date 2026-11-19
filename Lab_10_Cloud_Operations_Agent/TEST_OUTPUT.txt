@@ -1,0 +1,17 @@
+COMMAND: python.exe Lab_10_Cloud_Operations_Agent\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'severity': 'degraded', 'diagnosis': 'The v2.4.1 deploy preceded refund errors starting at 14:03:40.', 'proposed_action': 'rollback', 'status': 'AWAITING HUMAN APPROVAL -- NOT EXECUTED', 'note': 'Urgency noted, but approval is still required.'}
+
+COMMAND: python.exe Lab_10_Cloud_Operations_Agent\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'severity': 'degraded', 'incident_start': '09:15:00', 'current_error_rate': 3.5, 'baseline_error_rate': 0.2, 'diagnosis': {'affected_path': 'database connection pool', 'suspect_deploy': {'ts': '09:01:00', 'service': 'user-api', 'version': 'v3.2', 'previous_version': 'v3.1'}, 'hypothesis': 'The incident began at 09:15:00, shortly after user-api deployed v3.2 at 09:01:00. The warnings and errors are concentrated in the database connection pool, consistent with a release-related pool regression.'}}
+
+COMMAND: python.exe Lab_10_Cloud_Operations_Agent\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'warning': {'status': 'AUTO_EXECUTED', 'action_executed': True}, 'rollback': {'status': 'AWAITING HUMAN APPROVAL', 'action_executed': False}}

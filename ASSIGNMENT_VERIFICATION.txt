@@ -1,0 +1,19 @@
+PASS: Lab 1 - two revisions without regeneration
+PASS: Lab 1 - scheduling conflict explicitly detected
+PASS: Lab 2 - low turnout notification drafted
+PASS: Lab 2 - three-tool chain produced non-empty technical average
+PASS: Lab 6 - fourth task rejected
+PASS: Lab 6 - repeated failure escalates
+PASS: Lab 7 - security scan can fail and halt
+PASS: Lab 7 - builder never retries more than once
+PASS: Lab 8 - every required role contributes independent critique
+PASS: Lab 10 - low-risk action executes and rollback is gated
+PASS: Lab 10 - logs, deploy history, and metrics drive the database diagnosis
+PASS: Lab 11 - deliberate bug is exposed by independent test
+PASS: Lab 12 - omitted cost is rejected
+PASS: Lab 12 - sixth proposal is blocked until re-evaluation
+PASS: Lab 13 - electrical ALARM requires human review
+PASS: Lab 13 - three WARNING readings escalate
+PASS: Lab 14 - two skills route correctly
+PASS: Lab 14 - adversarial instruction is rejected
+TOTAL: 18 passed, 0 failed

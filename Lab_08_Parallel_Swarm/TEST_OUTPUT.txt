@@ -1,0 +1,19 @@
+COMMAND: python.exe Lab_08_Parallel_Swarm\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'research': {'role': 'research', 'output': 'Past events favored a 24-hour format with themed tracks.'}, 'logistics': {'role': 'logistics', 'output': {'venue': 'Grand Hall', 'venue_cost': 45000, 'date': 'Saturday'}}, 'budget': {'role': 'budget', 'output': {'total_cap': 30000}}, 'judging': {'role': 'judging', 'output': 'Judge on innovation, technical depth, and demo quality.'}}
+{'format_notes': 'Past events favored a 24-hour format with themed tracks.', 'venue': 'Grand Hall', 'venue_cost': 45000, 'date': 'Saturday', 'budget_cap': 30000, 'judging_criteria': 'Judge on innovation, technical depth, and demo quality.'}
+[{'rule_applied': 'budget_over_preference', 'resolution': 'Reject venue at 45000; request an alternative under 30000.'}]
+
+COMMAND: python.exe Lab_08_Parallel_Swarm\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'draft': {'format_notes': 'Past events favored a 24-hour format with themed tracks.', 'venue': 'Grand Hall', 'venue_cost': 45000, 'date': 'Saturday', 'budget_cap': 30000, 'judging_criteria': 'Judge on innovation, technical depth, and demo quality.', 'marketing_cost': 35000}, 'conflicts': [{'conflict': 'marketing_cost exceeds budget_cap', 'roles': ['marketing', 'budget'], 'rule': 'budget_over_preference'}]}
+
+COMMAND: python.exe Lab_08_Parallel_Swarm\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'role_critiques': {'research': ['Verify that Grand Hall capacity and format support the proposed 24-hour event.'], 'logistics': ['Propose an alternative venue under the 30000 budget.'], 'budget': ['Venue cost 45000 exceeds the 30000 total budget cap.', "Marketing cost 8000 exceeds the role's 5000 planned allocation."], 'judging': ['Confirm that judging criteria remain consistent with venue and format constraints.']}, 'conflict_log': [{'raised_by': 'research', 'objection': 'Verify that Grand Hall capacity and format support the proposed 24-hour event.'}, {'raised_by': 'logistics', 'objection': 'Propose an alternative venue under the 30000 budget.'}, {'raised_by': 'budget', 'objection': 'Venue cost 45000 exceeds the 30000 total budget cap.'}, {'raised_by': 'budget', 'objection': "Marketing cost 8000 exceeds the role's 5000 planned allocation."}, {'raised_by': 'judging', 'objection': 'Confirm that judging criteria remain consistent with venue and format constraints.'}]}

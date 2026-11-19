@@ -1,0 +1,34 @@
+COMMAND: python.exe Lab_06_OpenCLA_Runtime\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+Summary stub: note has 8 words.
+Draft email to meena@example.edu: 'Lab guide review'
+no contact found for Unknown Person
+
+COMMAND: python.exe Lab_06_OpenCLA_Runtime\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+attempt_1 Summary: 2 words
+attempt_2 Summary: 2 words
+attempt_3 Summary: 2 words
+attempt_4 {'rejected': True, 'reason': 'at most 3 tasks per session'}
+
+COMMAND: python.exe Lab_06_OpenCLA_Runtime\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+=== Same user and same skill: draft_email ===
+attempt 1: {'result': 'failed', 'attempt': 1}
+attempt 2: {'result': 'failed', 'attempt': 2}
+attempt 3: {'escalated': True, 'reason': 'draft_email failed twice for user uday; human escalation required'}
+
+=== Different skill does not consume draft_email failures ===
+{'result': 'failed', 'attempt': 1}
+
+=== Audit evidence ===
+{'timestamp': '2026-11-18T23:54:07', 'user': 'uday', 'skill': 'draft_email', 'error': 'simulated failure', 'escalated': False, 'result': {'result': 'failed', 'attempt': 1}}
+{'timestamp': '2026-11-18T23:54:07', 'user': 'uday', 'skill': 'draft_email', 'error': 'simulated failure', 'escalated': False, 'result': {'result': 'failed', 'attempt': 2}}
+{'timestamp': '2026-11-18T23:54:07', 'user': 'uday', 'skill': 'draft_email', 'error': None, 'escalated': True, 'result': {'escalated': True, 'reason': 'draft_email failed twice for user uday; human escalation required'}}
+{'timestamp': '2026-11-18T23:54:07', 'user': 'uday', 'skill': 'summarize_notes', 'error': 'simulated failure', 'escalated': False, 'result': {'result': 'failed', 'attempt': 1}}

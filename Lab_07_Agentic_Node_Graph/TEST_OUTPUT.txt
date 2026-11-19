@@ -1,0 +1,21 @@
+COMMAND: python.exe Lab_07_Agentic_Node_Graph\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+success: [{'node': 'requirement', 'owner': 'requirement_agent', 'success': True}, {'node': 'planner', 'owner': 'planner_agent', 'success': True}, {'node': 'builder', 'owner': 'builder_agent', 'success': True}, {'node': 'tester', 'owner': 'tester_agent', 'success': True}, {'node': 'reviewer', 'owner': 'reviewer_agent', 'success': True}, {'node': 'human_gate', 'owner': 'human', 'success': True}]
+builder failure: [{'node': 'requirement', 'owner': 'requirement_agent', 'success': True}, {'node': 'planner', 'owner': 'planner_agent', 'success': True}, {'node': 'builder', 'owner': 'builder_agent', 'success': False}, {'node': 'builder', 'failure_behavior_triggered': 'retry_build_or_escalate'}]
+
+COMMAND: python.exe Lab_07_Agentic_Node_Graph\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'node': 'security_scan', 'owner': 'security_agent', 'input': 'built artifact', 'output': 'scan result', 'success': 'no critical findings', 'failure': 'reject release'}
+[{'node': 'requirement', 'success': True}, {'node': 'builder', 'success': True}, {'node': 'security_scan', 'success': True, 'finding': 'clean'}, {'node': 'tester', 'success': True}]
+[{'node': 'requirement', 'success': True}, {'node': 'builder', 'success': True}, {'node': 'security_scan', 'success': False, 'finding': 'critical vulnerability'}, {'failure_behavior': 'reject release'}]
+
+COMMAND: python.exe Lab_07_Agentic_Node_Graph\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'success': True, 'attempts': 2}
+{'success': False, 'attempts': 2, 'escalated': True}

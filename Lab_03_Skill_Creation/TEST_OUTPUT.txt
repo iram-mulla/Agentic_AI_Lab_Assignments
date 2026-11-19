@@ -1,0 +1,19 @@
+COMMAND: python.exe Lab_03_Skill_Creation\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'claim': 'RAG reduced factual hallucination by 41%', 'evidence': 'The study used 200 held-out medical questions', 'limitation': 'The evaluation was small and domain-specific', 'takeaway': 'Undergraduate takeaway: RAG reduced factual hallucination by 41% -- verify before generalizing.'}
+{'claim': 'A campus Wi-Fi upgrade increased peak-hour throughput by 60%', 'evidence': 'Measurements covered two weeks in the library', 'limitation': 'The report does not include measurements from other buildings', 'takeaway': 'Undergraduate takeaway: A campus Wi-Fi upgrade increased peak-hour throughput by 60% -- verify before generalizing.'}
+True
+
+COMMAND: python.exe Lab_03_Skill_Creation\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'selected_claim': 'The system cut cost by 30% in a controlled study', 'selection_made': True, 'note': 'Selected the claim with the strongest explicit evidence among competing claims.', 'limitation': 'not stated in source'}
+
+COMMAND: python.exe Lab_03_Skill_Creation\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'claim': 'The system is the best available solution.', 'evidence': 'not stated in source', 'limitation': 'not stated in source', 'fabrication_detected': False}

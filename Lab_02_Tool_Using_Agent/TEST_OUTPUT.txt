@@ -1,0 +1,19 @@
+COMMAND: python.exe Lab_02_Tool_Using_Agent\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+Total sign-ups: 74. Average per event: 12.33.
+Hackathon Kickoff is at Innovation Lab on 2026-07-05.
+I don't have location/date metadata for Capstone Expo.
+
+COMMAND: python.exe Lab_02_Tool_Using_Agent\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'average': 9.333333333333334, 'trace': [{'tool': 'calculator', 'input': [12, 9, 7], 'output': 9.333333333333334, 'reason': 'determine whether low-turnout notice is justified'}, {'tool': 'send_notification', 'input': 'Low turnout detected. Promote the event and consider additional outreach.', 'output': {'drafted': True, 'message': 'Low turnout detected. Promote the event and consider additional outreach.', 'sent': False}, 'reason': 'computed average fell below 10'}]}
+
+COMMAND: python.exe Lab_02_Tool_Using_Agent\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'average': 10.5, 'trace': [{'step': 'read_csv', 'output': [{'event': 'AI Talk', 'signups': '12', 'category': 'technical'}, {'event': 'Hackathon', 'signups': '9', 'category': 'technical'}, {'event': 'Career Panel', 'signups': '11', 'category': 'social'}]}, {'step': 'filter_category', 'input': 'technical', 'output': [{'event': 'AI Talk', 'signups': '12', 'category': 'technical'}, {'event': 'Hackathon', 'signups': '9', 'category': 'technical'}]}, {'step': 'calculator', 'operation': 'average', 'output': 10.5}]}

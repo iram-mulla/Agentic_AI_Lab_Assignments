@@ -1,0 +1,27 @@
+COMMAND: python.exe Lab_12_Safety_Evaluation_Governance\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+True
+{'rejected': True, 'reason': 'No rollback plan defined'}
+{'diagnosis': 'memory leak', 'proposed_action': 'revert config', 'rollback_plan': 'revert to v3', 'requires_approval': True}
+
+COMMAND: python.exe Lab_12_Safety_Evaluation_Governance\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'rejected': True, 'reason': 'cost exceeds budget without finance approval'}
+{'rejected': True, 'reason': 'cost estimate omitted'}
+{'approved': True}
+
+COMMAND: python.exe Lab_12_Safety_Evaluation_Governance\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+proposal_1 {'proposed': True}
+proposal_2 {'proposed': True}
+proposal_3 {'proposed': True}
+proposal_4 {'proposed': True}
+proposal_5 {'proposed': True}
+proposal_6 {'blocked': True, 'reason': 're-evaluation required'}
+proposal_6_after_re_evaluation {'proposed': True}

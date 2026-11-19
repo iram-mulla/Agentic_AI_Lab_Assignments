@@ -1,0 +1,18 @@
+COMMAND: python.exe Lab_11_Agentic_SDLC_Factory\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+[HUMAN CHECKPOINT] stories confirmed
+{'stories': [{'id': 'US-1', 'text': 'As a user, export the filtered report view as CSV.', 'acceptance_criteria': ['clicking Export produces a .csv file', 'the CSV contains only filtered rows', 'the header matches visible columns']}], 'design': {'story_id': 'US-1', 'components': ['export_endpoint', 'csv_serializer', 'export_button']}, 'tests': [('produces output', True), ('header matches', True), ('only filtered rows', True)], 'review': {'issues': [], 'clean': True}}
+
+COMMAND: python.exe Lab_11_Agentic_SDLC_Factory\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'lineage': [{'story': 'US-1', 'design': {'story_id': 'US-1', 'components': ['CSV export endpoint', 'serializer']}, 'code': {'story_id': 'US-1', 'implementation': 'implement_csv_export'}, 'tests': {'story_id': 'US-1', 'tests': ['CSV export output', 'CSV export filter preservation']}, 'review': {'story_id': 'US-1', 'status': 'pending human review', 'independent_tests': True}}, {'story': 'US-2', 'design': {'story_id': 'US-2', 'components': ['PDF export endpoint', 'serializer']}, 'code': {'story_id': 'US-2', 'implementation': 'implement_pdf_export'}, 'tests': {'story_id': 'US-2', 'tests': ['PDF export output', 'PDF export filter preservation']}, 'review': {'story_id': 'US-2', 'status': 'pending human review', 'independent_tests': True}}]}
+
+COMMAND: python.exe Lab_11_Agentic_SDLC_Factory\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+{'tests': {'produces_csv_output': True, 'header_matches': True, 'only_filtered_rows_present': False}, 'failed_tests': ['only_filtered_rows_present']}

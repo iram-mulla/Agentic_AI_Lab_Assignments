@@ -1,0 +1,20 @@
+COMMAND: python.exe Lab_04_Memory_and_Retrieval\reference.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+[memory, dated 2026-07-03] we chose PostgreSQL
+{'conflict': True, 'message': "This conflicts with stored decision 'we chose PostgreSQL'. Should I update memory?"}
+
+COMMAND: python.exe Lab_04_Memory_and_Retrieval\assignment1.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+database [{'fact': 'chose PostgreSQL', 'date': '2026-07-03'}]
+hosting [{'fact': 'selected Azure', 'date': '2026-07-05'}]
+
+COMMAND: python.exe Lab_04_Memory_and_Retrieval\assignment2.py
+EXIT_CODE: 0
+STATUS: PASS
+STDOUT:
+PostgreSQL fresh
+MySQL this decision is from 90 days ago and may be out of date
